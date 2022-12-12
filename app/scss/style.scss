@@ -23,7 +23,7 @@
     @extend %roboto-400;
     text-transform: uppercase;
     color: $title;
-    padding-bottom: 1px;
+    padding: 0 2px 1px;
   }
   &__list-link:hover{
     @extend %roboto-700;
