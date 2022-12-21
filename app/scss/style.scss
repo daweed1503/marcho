@@ -502,6 +502,64 @@
   margin: 0 auto;
 }
 
+.promo{
+  background-image: url(../images/promo/promo-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding: 160px 0;
+  text-align: center;
+  &__inner{
+    max-width: 570px;
+    width: 100%;
+    margin-left: auto;
+  }
+  &__subtitle{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: $accent;
+  }
+  &__link{
+    @extend %roboto-400;
+    color: $title;
+    letter-spacing: 0.2em;
+    border: 1px solid $accent;
+    padding: 20px 33px;
+  }
+  &__clock{
+    margin: 40px 0 60px;
+    display: flex;
+    justify-content: space-between;
+    &-item{
+      background-color: #fff;
+      box-shadow: 0px 10px 40px 0px rgba(187,187,187,0.3);
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+       span{
+
+        @extend %roboto-700;
+        font-size: 48px;
+        color: $title;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.partners{
+  padding: 120px 0 60px;
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 
 
 
