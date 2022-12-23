@@ -727,6 +727,34 @@
   }
 }
 
+.page-404{
+  padding: 120px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__content{
+    max-width: 570px;
+    width: 100%;
+  }
+  &__title{
+    color: #28384f;
+    margin-bottom: 20px;
+    @extend %roboto-700;
+    font-size: 48px;
+    line-height: 65px;
+  }
+  &__text{
+    max-width: 460px;
+    margin-bottom: 60px;
+  }
+  &__link{
+    @extend %btn;
+    padding: 15px 30px;
+  }
+}
+
 
 
 
