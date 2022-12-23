@@ -149,6 +149,19 @@
     }
   }
 
+  .top{
+    &__container{
+      max-width: 1700px;
+      padding: 120px 0 130px;
+      text-align: center;
+      margin: 0 auto;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top center;
+    }
+  }
+  
+
   .top-slider{
     background-color: $bg;
     background-image: url(../images/decor/top-slider-bg.png);
@@ -655,6 +668,60 @@
         right: -15px;
       }
     }
+  }
+}
+
+.modal{
+  max-width: 570px;
+  margin: 0 auto 120px;
+  padding-top: 120px;
+  &__links{
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__link{
+    @extend %roboto-400;
+    font-size: 22px;
+    color: #909090;
+    margin: 0 30px;
+    &--active{
+      @extend %roboto-700;
+      color: $accent;
+    }
+  }
+  &__label{
+    margin-bottom: 40px;
+    display: block;
+    &-checkbox{
+      margin-bottom: 10px;
+      display: block;
+    }
+    
+  }
+  &__input{
+    display: block;
+    border: none;
+    padding: 0 15px;
+    background-color: $bg;
+    width: 100%;
+    height: 60px;
+    margin-top: 7px;
+  }
+  &__btn{
+    border: none;
+    display: block;
+    color: #fff;
+    background-color: #292929;
+    @extend %roboto-400;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+    width: 100%;
+    padding: 14px 0;
+    margin-bottom: 10px;
+  }
+  &__form-link{
+    color: $accent;
+
   }
 }
 
