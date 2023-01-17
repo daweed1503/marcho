@@ -1734,4 +1734,128 @@
     }
   }
 }
+.blog-one{
+  &__text{
+    h4{
+      color: $title;
+      font-size: 22px;
+      @extend %roboto-500;
+      margin-bottom: 15px;
+    }
+    p{
+      margin-bottom: 25px;
+    }
+    blockquote{
+      background-color: $bg;
+      padding: 30px;
+      color: $title;
+      font-size: 22px;
+      @extend %roboto-500;
+      border-left: 3px solid $accent;
+      margin-bottom: 25px;
+    }
+    
+    border: 1px solid #ececec;
+    border-top: none;
+    padding: 30px;
+  }
+  &__left-img{
+      float: left;
+      margin-right: 30px;
+      margin-bottom: 10px;
+    }
+    &__right-img{
+      float: right;
+      margin-left: 30px;
+      margin-bottom: 10px;
+    }
+  &__info{
+    display: flex;
+    margin-bottom: 20px;
+  }
+  &__item{
+    padding-left: 26px;
+    margin-right: 30px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      left: 0;
+      top: 5px;
+      background-image: url(../images/icons/date.svg);
+    }
+  }
+  &__item--comments::before{
+    background-image: url(../images/icons/comments.svg);
+  }
+  &__item--author::before{
+    background-image: url(../images/icons/user.svg);
+  }
+  &__form-title{
+    color: $title;
+    font-size: 24px;
+    margin: 35px 0 25px;
+    @extend %roboto-700;
+  }
+  .reviews__form{
+    border-bottom: none;
+  }
+  &__box{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+  }
+  &__tags{
+    padding-left: 30px;
+    span{
+
+      color: $title;
+    }
+    a{
+      color: $default;
+      text-decoration: none;
+    }
+  }
+  &__share{
+    color: $title;
+    a{
+      margin-right: 15px;
+      vertical-align: middle;
+      &:hover{
+        path{
+          fill: $accent;
+        }
+      }
+      path{
+        fill: $default;
+      }
+    }
+  }
+  &__author{
+    display: flex;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ececec;
+  }
+  &__author-img{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    margin-right: 30px;
+  }
+  &__author-title{
+    color: $title;
+    font-size: 22px;
+    @extend %roboto-500;
+    margin-bottom: 20px;
+  }
+}
+.reviews-title{
+  color: $title;
+  margin-bottom: 25px;
+  font-size: 24px;
+  @extend %roboto-700;
+}
 @import "media";
