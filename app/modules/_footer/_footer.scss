@@ -57,6 +57,9 @@
   &-text{
     margin-bottom: 30px;
   }
+  &-form{
+    display: flex;
+  }
   &-form__input{
     border: none;
     max-width: 320px;
@@ -74,8 +77,9 @@
   }
   }
   .footer__bottom{
-    height: 75px;
+    min-height: 75px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     font-size: 12px;
@@ -85,3 +89,57 @@
       vertical-align: middle;
     }
   }
+
+@media (max-width: 1050px){
+  .footer__top{
+    flex-wrap: wrap;
+    &-item-form{
+      margin-top: 30px;
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 860px){
+  .footer__top{
+    &-contact{
+      width: 100%;
+      margin-bottom: 30px;
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 620px){
+  .footer__bottom{
+    justify-content: center;
+    &-copy{
+      width: 100%;
+      text-align: center;
+    }
+
+  }
+}
+
+@media (max-width: 450px){
+  .footer__top{
+    &-nav{
+      margin-top: 30px;
+    }
+    &-form{
+     flex-wrap: wrap; 
+    }
+    &-form__input{
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
+    &-form__btn{
+      width: 100%;
+    }
+  }
+  .footer__bottom{
+    &-payment__img{
+      margin-left: 15px;
+    }
+  }
+}
